@@ -38,4 +38,9 @@ const user2: User = {
   },
   gender:"male"
 }
-console.log(users1,user2)
+console.log(users1, user2)
+type Addfunction = (num1: number, num2: number) => number;
+const add: Addfunction = (num1, num2) => {
+  return num1+num2
+}
+console.log(add(10, 20));
