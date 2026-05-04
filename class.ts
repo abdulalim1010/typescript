@@ -1,17 +1,20 @@
-class Animal{
+class Animal {
   name: string;
-  specis: string;
-  sound: string
-  constructor(name:string,specis:string,sound:string
-    
-  )
+  species: string;
+  sound: string;
 
-  {
-    this.name = name,
-      this.sound = sound,
-      this.specis=specis
+  constructor(name: string, species: string, sound: string) {
+    this.name = name;
+    this.species = species;
+    this.sound = sound;
+  
+  }
+    makeSound(){
+      console.log(`the animal make sound`);
     }
 }
 const dog = new Animal("mithu", "Ghew", "dog")
 console.log(dog.name)
+const cat = new Animal("cat ","cattu","laltu")
+cat.makeSound()
 
